@@ -7,20 +7,23 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 {
-    'name': 'Show images in tree views',
-    'version': '11.0.1.0.0',
-    'author': "Therp BV, "
-              "MONK Software, "
-              "Odoo Community Association (OCA), "
-              "Serpent Consulting Services Pvt. Ltd.",
-    'website': 'https://github.com/OCA/Web',
-    'license': 'AGPL-3',
-    'category': 'Web',
-    'depends': [
-        'web',
+    "name": "Show images in tree views",
+    "version": "18.0.1.0.0",
+    "author": "Therp BV, "
+    "MONK Software, "
+    "Odoo Community Association (OCA), "
+    "Serpent Consulting Services Pvt. Ltd.",
+    "website": "https://github.com/OCA/Web",
+    "license": "AGPL-3",
+    "category": "Web",
+    "depends": [
+        "web",
     ],
-    'data': [
-        'view/assets.xml',
-    ],
-    'installable': True,
+    "installable": True,
+    "assets": {
+        "web.assets_backend": [
+            "web_tree_image/static/src/css/common.css",
+            "web_tree_image/static/src/js/tooltip.js",
+        ],
+    },
 }
